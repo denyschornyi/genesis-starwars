@@ -1,22 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
-import { getAllPlanets } from "./service/getData";
+import SwapiService from "./service/SwapiService";
 
 function App() {
-  const [allPlanets, setAllPlanets] = useState([]);
+  const SwapiData = new SwapiService();
 
-  useEffect(() => {
-    getAllPlanets().then((data) => {
-      console.log(data);
-    });
-  }, []);
-
-  return (
-    <div className="App">
-      <header className="App-header">hey</header>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
