@@ -20,14 +20,14 @@ export default class SwapiService {
     return this._transformPlanet(planet);
   };
 
-  _exttractId = (item) => {
+  exttractId = (item) => {
     const idRegExp = /\/([0-9]*)\/$/;
     return item.url.match(idRegExp)[1];
   };
 
   _transformPlanet = (planet) => {
     return {
-      id: this._exttractId(planet),
+      id: this.exttractId(planet),
       name: planet.name,
       climate: planet.climate,
       population: planet.population,

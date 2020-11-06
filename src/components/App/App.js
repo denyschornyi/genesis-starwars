@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "../../pages/Home/Home";
 import PlanetDetails from "../../pages/PlanetDetails/PlanetDetails";
-import ErrorIndecator from "../ErrorIndecator/ErrorIndecator";
 
 function App() {
   return (

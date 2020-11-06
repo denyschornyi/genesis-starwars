@@ -1,0 +1,25 @@
+.planetInfo__wrapper {
+  color: white;
+}
+
+.planetInfo {
+  border: 2px solid yellow;
+  font-family: "Orbitron";
+}
+
+.planetInfo__name {
+  padding: 10px;
+  border-bottom: 2px solid yellow;
+}
+
+.planetInfo_residents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.planetInfo_residents img {
+  width: 90px;
+  border-radius: 50%;
+  margin: 10px;
+}
