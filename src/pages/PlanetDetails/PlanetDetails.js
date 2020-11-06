@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
+import RingLoader from "react-spinners/RingLoader";
 import "./planetdetails.css";
 
 import { PlanetInfo } from "./PlanetInfo";
@@ -20,10 +21,13 @@ function PlanetDetails() {
     history.push("/");
   };
 
+  const spinnerStyles = {
+    margin: "auto"
+  };
   const planet = planetData ? (
     <PlanetInfo info={planetData} />
   ) : (
-    <h1 className="text-white">Planet if loading .....</h1>
+    <RingLoader loading color="#fff" size={120} css={spinnerStyles} />
   );
   return (
     <div className="container my-5">
