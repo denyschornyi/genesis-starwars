@@ -1,32 +1,24 @@
 import React from "react";
 import "./card.css";
 
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
-
 function PlanetCard({ id, name, climate, population }) {
+  const addDefaultSrc = (e) => {
+    e.target.src =
+      "https://i.pinimg.com/474x/95/a1/1e/95a11e4c1a9f8b713ef956b31b61fcfa.jpg";
+  };
+
   return (
-    <div className="planetCard">
+    <div className="planetCard mb-5">
       <img
         src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`}
         className="planetCard__image"
         alt={name}
+        onError={addDefaultSrc}
       />
-      <div>
-        <p>Climate: {climate}</p>
+      <div className="p-2 bg-white planetCard__info">
         <h3>{name}</h3>
-        {/* <CardContent>
-          <Typography variant="subtitle1" color="textSecondary">
-            Population:{population}
-          </Typography>
-          <Typography component="h5" variant="h5">
-            {name}
-          </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            Climate:{climate}
-          </Typography>
-        </CardContent> */}
+        <p>Climate: {climate}</p>
+        <p>Population: {population}</p>
       </div>
     </div>
   );

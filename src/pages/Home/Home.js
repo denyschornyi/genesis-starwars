@@ -30,7 +30,7 @@ function Home() {
               <Link
                 to={"/" + id}
                 key={id}
-                className="col-lg-4 col-md-6 col-sm-12"
+                className="col-lg-4 col-md-6 col-sm-12 cardLink"
               >
                 <PlanetCard
                   id={id}

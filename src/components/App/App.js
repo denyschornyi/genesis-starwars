@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./app.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "../../pages/Home/Home";
 import PlanetDetails from "../../pages/PlanetDetails/PlanetDetails";
+import ErrorIndecator from "../ErrorIndecator/ErrorIndecator";
 
 function App() {
   return (
