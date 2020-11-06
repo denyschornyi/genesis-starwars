@@ -1,0 +1,12 @@
+.planetCard {
+  color: white;
+  width: 300px;
+  height: 240px;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.planetCard__image {
+  width: 150px;
+}
