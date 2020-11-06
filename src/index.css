@@ -8,6 +8,7 @@ body {
 }
 
 body {
-  background-image: url("https://i.redd.it/kxp5ddj6lgr41.jpg");
+  background-image: url("https://cdn.mos.cms.futurecdn.net/rXQiLcfc89vp3EbYQ58ERH-1200-80.jpeg");
   background-size: cover;
+  background-attachment: fixed;
 }
