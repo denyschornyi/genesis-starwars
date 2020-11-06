@@ -1,4 +1,5 @@
 import React from "react";
+import numeral from "numeral";
 import "./card.css";
 
 function PlanetCard({ id, name, climate, population }) {
@@ -18,7 +19,7 @@ function PlanetCard({ id, name, climate, population }) {
       <div className="p-2 bg-white planetCard__info">
         <h3>{name}</h3>
         <p>Climate: {climate}</p>
-        <p>Population: {population}</p>
+        <p>Population: {numeral(population).format("0,0")}</p>
       </div>
     </div>
   );
