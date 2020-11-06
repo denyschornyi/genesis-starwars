@@ -1,12 +1,19 @@
 import React from "react";
 import "./planetdetails.css";
 
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 function PlanetDetails() {
-  let { id } = useParams();
+  const { id } = useParams();
+  const history = useHistory();
+
+  const getBack = () => {
+    history.push("/");
+  };
+
   return (
     <div>
+      <button onClick={getBack}>Get back to planets</button>
       <h1>PlanetDetails -> ID is -> {id}</h1>
     </div>
   );
